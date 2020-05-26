@@ -21,6 +21,6 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - src/index.js
-    - src/app.js
-    - src/package.json
+    - test-app 3/modules/example/index.js
+    - test-app 3/app.js
+    - test-app 3/package.json
