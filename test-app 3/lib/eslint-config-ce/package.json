@@ -1,0 +1,14 @@
+{
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "ESLint configuration for Climate Edge projects",
+  "devDependencies": {
+    "eslint-rule-documentation": "^1.0.23",
+    "server-common": "git+https://ceRead:Db9DwnzWJvNkPtX9@bitbucket.org/climateedge/server-common.git#v0.1.15"
+  },
+  "name": "eslint-config-ce",
+  "peerDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "version": "0.3.0"
+}

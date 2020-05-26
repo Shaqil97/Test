@@ -1,0 +1,32 @@
+{
+  "bundleDependencies": false,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "~4.17.1",
+    "express-validation": "^1.0.3",
+    "graceful-fs": "^4.2.3",
+    "joi": "^14.3.1"
+  },
+  "deprecated": false,
+  "description": "The project contains code that is used by more than one server side application.",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jasmine": "^3.5.0",
+    "jsdoc": "^3.6.3",
+    "minami": "^1.2.3"
+  },
+  "homepage": "https://bitbucket.org/climateedge/csv-service#readme",
+  "main": "app.js",
+  "name": "server-common",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/climateedge/csv-service.git"
+  },
+  "scripts": {
+    "generate-docs": "jsdoc -r  . -d docs -c jsdoc.conf",
+    "prestart": "npm install",
+    "start": "nodemon app.js",
+    "test": "node node_modules/jasmine/bin/jasmine"
+  },
+  "version": "0.2.2"
+}

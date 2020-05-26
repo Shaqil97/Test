@@ -1,0 +1,26 @@
+{
+  "name": "server-skeleton-app",
+  "description": "A skeleton app used to start new projects",
+  "version": "0.2.1",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "nodemon app.js",
+    "generate-docs": "jsdoc -r  . -d docs -c jsdoc.conf",
+    "generate-swagger": "swagger-jsdoc -d swagger.js",
+    "test": "node node_modules/jasmine/bin/jasmine"
+  },
+  "dependencies": {
+    "server-common": "file:./lib/server-common",
+    "eslint-config-ce": "file:./lib/eslint-config-ce"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jasmine": "^3.5.0",
+    "jsdoc": "^3.6.3",
+    "minami": "^1.2.3",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.0",
+    "swagger-jsdoc": "^3.5.0"
+  }
+}
