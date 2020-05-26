@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 10
+      nodejs: 12
     commands:
       - echo Runing the application
       - npm start
@@ -20,6 +20,6 @@ phases:
 # Include only the files required for your application to run.
 artifacts:
   files:
-    - modules/example/index.js
-    - app.js
-    - package.json
+    - src/index.js
+    - src/app.js
+    - src/package.json
