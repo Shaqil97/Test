@@ -1,0 +1,25 @@
+# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Runing the application
+      - npm start
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Testing the code
+      - npm test
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - npm run-script generate-docs
+      - npm run-script generate-swagger
+# Include only the files required for your application to run.
+artifacts:
+  files:
+    - modules/example/index.js
+    - app.js
+    - package.json
